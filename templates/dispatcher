@@ -6,4 +6,4 @@
 ### 20 - Registrar servers (if not locally handled)
 
 # setid(integer) destination(sip uri) flags (integer, optional)
-1 sip:{{ ip }}:1100 2
+1 sip:{{ ip }}:11000 2
