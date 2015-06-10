@@ -4,7 +4,7 @@ currently does not provide binaries for CentOS 7, which I had to use for driver 
 
 ## Kamailio
 ### Required Modules for Compilation
-The following modules are required by the Kazoo scripts for Kamailio:
+The following modules are included in Kazoo's Kamailio scripts:
 - ctl
 - kex
 - tm
@@ -24,3 +24,17 @@ The following modules are required by the Kazoo scripts for Kamailio:
 - uac_redirect
 - db_text
 - kazoo
+- acc
+- ipops
+- pike
+- dispatcher
+- nathelper
+- timer
+- presence
+- presence_dialoginfo
+- presence_mwi
+- presence_xml
+- auth
+- sqlops
+- tls
+- websocket
