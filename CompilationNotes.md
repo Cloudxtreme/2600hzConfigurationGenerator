@@ -35,6 +35,7 @@ The following modules are included in Kazoo's Kamailio scripts:
 - presence_mwi
 - presence_xml
 - auth
+- registrar
 - sqlops
 - tls
 - websocket
