@@ -10,7 +10,8 @@ on using sqlops
 - kazoo
 - presence
 - presence_dialoginfo
-- presence_mwi presence_xml
+- presence_mwi
+- presence_xml
 - sqlops
 - tls
 - websocket
