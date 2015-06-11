@@ -20,3 +20,12 @@ on using sqlops
 If you receive errors, you need to regenerate the text databases. This happened to me when I upgraded to Kamailio 3.4 but was 
 still using Kazoo 3.20 configs. This website goes into detail:
 http://nil.uniza.sk/sip/kamailio/kamailio-31-text-file-database-dbtext
+
+## FreeSwitch
+### Required Modules for Compilation
+- formats/mod_shout
+- #event_handlers/mod_erlang_event
+
+### Compiler Flags
+The EPEL package of Erlang installs it in a place where it is not added to FreeSwitch's include path. 
+Adding -I/usr/lib64/erlang/usr/lib to the CPPFLAGS environmental variable does the trick on CentOS 7.
