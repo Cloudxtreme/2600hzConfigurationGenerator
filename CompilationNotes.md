@@ -24,7 +24,7 @@ http://nil.uniza.sk/sip/kamailio/kamailio-31-text-file-database-dbtext
 ## FreeSwitch
 ### Required Modules for Compilation
 - formats/mod_shout
-- #event_handlers/mod_erlang_event
+- event_handlers/mod_erlang_event
 
 ### Compiler Flags
 The EPEL package of Erlang installs it in a place where it is not added to FreeSwitch's include path. 
