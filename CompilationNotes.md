@@ -14,6 +14,7 @@ on using sqlops
 - sqlops
 - tls
 - websocket
+
 ### Regenerating dbtext
 If you receive errors, you need to regenerate the text databases. This happened to me when I upgraded to Kamailio 3.4 but was 
 still using Kazoo 3.20 configs. This website goes into detail:
