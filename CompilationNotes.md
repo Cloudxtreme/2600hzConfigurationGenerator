@@ -26,6 +26,6 @@ http://nil.uniza.sk/sip/kamailio/kamailio-31-text-file-database-dbtext
 - formats/mod_shout
 - event_handlers/mod_erlang_event
 
-### Compiler Flags
-The EPEL package of Erlang installs it in a place where it is not added to FreeSwitch's include path. 
-Adding -I/usr/lib64/erlang/usr/lib to the CPPFLAGS environmental variable does the trick on CentOS 7.
+### A Note on Erlang Installation Order
+If Erlang is installed after the FreeSwitch build process starts, the Erland header files won't be found. At this point, 
+it is best to start over (delete FreeSwitch and redownload it).
