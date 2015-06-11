@@ -4,38 +4,17 @@ currently does not provide binaries for CentOS 7, which I had to use for driver 
 
 ## Kamailio
 ### Required Modules for Compilation
-The following modules are included in Kazoo's Kamailio scripts:
-- ctl
-- kex
-- tm
-- tmx
-- sl
-- rr
-- maxfwd
-- siputils
-- sanity
-- textops
-- textopsx
-- htable
-- pv
-- xlog
-- mi_fifo
-- uac
-- uac_redirect
-- db_text
+The following additional modules are required as of Kamailio 3.4 and Kazoo 3.20. You actually don't need all of them if you 
+don't use some of the roles that are disabled by default. Also note that you need to include the DB of your choice if you plan 
+on using sqlops
 - kazoo
-- acc
-- ipops
-- pike
-- dispatcher
-- nathelper
-- timer
 - presence
 - presence_dialoginfo
-- presence_mwi
-- presence_xml
-- auth
-- registrar
+- presence_mwi presence_xml
 - sqlops
 - tls
 - websocket
+### Regenerating dbtext
+If you receive errors, you need to regenerate the text databases. This happened to me when I upgraded to Kamailio 3.4 but was 
+still using Kazoo 3.20 configs. This website goes into detail:
+http://nil.uniza.sk/sip/kamailio/kamailio-31-text-file-database-dbtext
