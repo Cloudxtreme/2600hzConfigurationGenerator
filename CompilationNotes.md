@@ -29,3 +29,18 @@ http://nil.uniza.sk/sip/kamailio/kamailio-31-text-file-database-dbtext
 ### A Note on Erlang Installation Order
 If Erlang is installed after the FreeSwitch build process starts, the Erland header files won't be found. At this point, 
 it is best to start over (delete FreeSwitch and redownload it).
+
+## Kazoo
+### Clean Build
+Clean the build before installing.
+
+### make install
+make install leaves the results in the current directory.
+
+### Configuration Files
+The configuration is hard-coded to /etc/kazoo.
+
+## CouchDB
+### Version 2.0 5986
+Port 5986 (used for clustering) is only available on localhost for version 2.0, so it is necessary to use port forwarding 
+to interact with the settings database, set up the admin user, etc.
