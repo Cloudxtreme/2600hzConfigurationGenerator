@@ -44,3 +44,7 @@ The configuration is hard-coded to /etc/kazoo.
 ### Version 2.0 5986
 Port 5986 (used for clustering) is only available on localhost for version 2.0, so it is necessary to use port forwarding 
 to interact with the settings database, set up the admin user, etc.
+
+## RabbitMQ
+### Operating System Packages
+RabbitMQ came with operating system packages, so they were retained.
